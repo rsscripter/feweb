@@ -138,10 +138,6 @@ img_file = open("coding_stuff\\images.gill", "w")
 img_file.write('\n'.join(imgs))
 img_file.close()
 
-d_file = open("coding_stuff\\descriptions.gill", "w")
-d_file.write('\n'.join(descs))
-d_file.close()
-
 os.system("git add .")
 os.system("git commit -m 'pop'")
 os.system('git push origin master')
