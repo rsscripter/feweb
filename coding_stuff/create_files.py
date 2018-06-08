@@ -127,7 +127,7 @@ try:
 	files = [f for f in os.listdir('.') if os.path.isfile(f)]
 	for f in files:
 		filename, file_extension = os.path.splitext(f)
-		if file_extension[1:] in img_extensions:
+		if file_extension[1:].lower() in img_extensions:
 			g = open(filename + ".txt" , "a")
 	sys.exit()
 
